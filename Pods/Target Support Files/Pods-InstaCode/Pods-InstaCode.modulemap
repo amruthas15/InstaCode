@@ -1,0 +1,6 @@
+framework module Pods_InstaCode {
+  umbrella header "Pods-InstaCode-umbrella.h"
+
+  export *
+  module * { export * }
+}
