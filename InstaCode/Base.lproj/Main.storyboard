@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,21 +87,36 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="71.651785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="sKL-CJ-GfY">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FE2-qq-oz4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="NsS-bU-k4q" sceneMemberID="viewController">
+                <exit id="j0A-4y-vz5" userLabel="Exit" sceneMemberID="exit"/>
+                <viewController storyboardIdentifier="FeedViewController" id="NsS-bU-k4q" customClass="FeedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vKk-vv-O9a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="bNe-dQ-pgY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5fE-3x-c4d"/>
+                    <navigationItem key="navigationItem" id="5fE-3x-c4d">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="FdO-VN-SNE">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="k1m-pO-S8G">
+                                <rect key="frame" x="20" y="13" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logOutClicked:" destination="NsS-bU-k4q" eventType="touchUpInside" id="zkh-LL-9pa"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="logOutButtonClicked:" destination="j0A-4y-vz5" id="c8T-kl-CjA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1612" y="72"/>
+            <point key="canvasLocation" x="1611.5942028985507" y="71.651785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oy9-Qc-0tM">

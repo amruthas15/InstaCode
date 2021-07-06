@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		586599EF2695084E00163C58 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586599EE2695084E00163C58 /* LoginViewController.m */; };
+		586599F22695197B00163C58 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586599F12695197B00163C58 /* FeedViewController.m */; };
 		58B9ACF22694F78400AB03D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9ACF12694F78400AB03D7 /* AppDelegate.m */; };
 		58B9ACF52694F78400AB03D7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9ACF42694F78400AB03D7 /* SceneDelegate.m */; };
 		58B9ACF82694F78400AB03D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9ACF72694F78400AB03D7 /* ViewController.m */; };
@@ -44,6 +45,8 @@
 		4F61E07A1FB390FBEC06BEF1 /* Pods-InstaCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCode.debug.xcconfig"; path = "Target Support Files/Pods-InstaCode/Pods-InstaCode.debug.xcconfig"; sourceTree = "<group>"; };
 		586599ED2695084E00163C58 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		586599EE2695084E00163C58 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		586599F02695197B00163C58 /* FeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		586599F12695197B00163C58 /* FeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		58B9ACED2694F78400AB03D7 /* InstaCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B9ACF02694F78400AB03D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58B9ACF12694F78400AB03D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 			children = (
 				586599ED2695084E00163C58 /* LoginViewController.h */,
 				586599EE2695084E00163C58 /* LoginViewController.m */,
+				586599F02695197B00163C58 /* FeedViewController.h */,
+				586599F12695197B00163C58 /* FeedViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 				58B9ACF22694F78400AB03D7 /* AppDelegate.m in Sources */,
 				58B9AD032694F78500AB03D7 /* main.m in Sources */,
 				58B9ACF52694F78400AB03D7 /* SceneDelegate.m in Sources */,
+				586599F22695197B00163C58 /* FeedViewController.m in Sources */,
 				586599EF2695084E00163C58 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
