@@ -23,7 +23,7 @@
     if(PFUser.currentUser)
     {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"FeedViewController"];
+        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"AuthenticatedViewController"];
         NSLog(@"Automatic Sign-in");
     }
 }

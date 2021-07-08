@@ -30,6 +30,10 @@
     NSLog(@"Byeee");
 }
 
+- (IBAction)postButtonClicked:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"postSegue" sender:nil];
+}
+
 
 
 
