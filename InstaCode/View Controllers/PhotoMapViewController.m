@@ -46,8 +46,9 @@
     UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
     
-    self.postedImage = editedImage;
-    self.imageView.image = editedImage;
+    CGSize
+    //self.postedImage = [self resizeImage:editedImage withSize:10MB]; //figure out size for 10MB
+    self.imageView.image = self.postedImage;
 
     // Do something with the images (based on your use case)
     
@@ -66,6 +67,20 @@
 
         }];
     }
+}
+
+- (UIImage *)resizeImage:(UIImage *)image withSize:(CGSize)size {
+    UIImageView *resizeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+    
+    resizeImageView.contentMode = UIViewContentModeScaleAspectFill;
+    resizeImageView.image = image;
+    
+    UIGraphicsBeginImageContext(size);
+    [resizeImageView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
 }
 
 -(void) errorAlertOccurs: (NSString *)errorMessage {
