@@ -11,6 +11,8 @@
 		586599F22695197B00163C58 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586599F12695197B00163C58 /* FeedViewController.m */; };
 		586599F5269645E000163C58 /* PhotoMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586599F4269645E000163C58 /* PhotoMapViewController.m */; };
 		586599F926965DA500163C58 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 586599F826965DA500163C58 /* Post.m */; };
+		586599FD2697B8D100163C58 /* FeedPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 586599FC2697B8D100163C58 /* FeedPostCell.m */; };
+		58659A002698B17800163C58 /* PostDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586599FF2698B17800163C58 /* PostDetailsViewController.m */; };
 		58B9ACF22694F78400AB03D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9ACF12694F78400AB03D7 /* AppDelegate.m */; };
 		58B9ACF52694F78400AB03D7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9ACF42694F78400AB03D7 /* SceneDelegate.m */; };
 		58B9ACF82694F78400AB03D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9ACF72694F78400AB03D7 /* ViewController.m */; };
@@ -53,6 +55,10 @@
 		586599F4269645E000163C58 /* PhotoMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoMapViewController.m; sourceTree = "<group>"; };
 		586599F726965DA500163C58 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		586599F826965DA500163C58 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		586599FB2697B8D100163C58 /* FeedPostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedPostCell.h; sourceTree = "<group>"; };
+		586599FC2697B8D100163C58 /* FeedPostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedPostCell.m; sourceTree = "<group>"; };
+		586599FE2698B17800163C58 /* PostDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDetailsViewController.h; sourceTree = "<group>"; };
+		586599FF2698B17800163C58 /* PostDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostDetailsViewController.m; sourceTree = "<group>"; };
 		58B9ACED2694F78400AB03D7 /* InstaCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B9ACF02694F78400AB03D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58B9ACF12694F78400AB03D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,6 +136,8 @@
 				586599F12695197B00163C58 /* FeedViewController.m */,
 				586599F3269645E000163C58 /* PhotoMapViewController.h */,
 				586599F4269645E000163C58 /* PhotoMapViewController.m */,
+				586599FE2698B17800163C58 /* PostDetailsViewController.h */,
+				586599FF2698B17800163C58 /* PostDetailsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -141,6 +149,15 @@
 				586599F826965DA500163C58 /* Post.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		586599FA2697B8B000163C58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				586599FB2697B8D100163C58 /* FeedPostCell.h */,
+				586599FC2697B8D100163C58 /* FeedPostCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		58B9ACE42694F78400AB03D7 = {
@@ -168,6 +185,7 @@
 		58B9ACEF2694F78400AB03D7 /* InstaCode */ = {
 			isa = PBXGroup;
 			children = (
+				586599FA2697B8B000163C58 /* Views */,
 				586599F626965D8C00163C58 /* Models */,
 				586599EC2695083300163C58 /* View Controllers */,
 				58B9ACF02694F78400AB03D7 /* AppDelegate.h */,
@@ -452,10 +470,12 @@
 			files = (
 				58B9ACF82694F78400AB03D7 /* ViewController.m in Sources */,
 				58B9ACF22694F78400AB03D7 /* AppDelegate.m in Sources */,
+				586599FD2697B8D100163C58 /* FeedPostCell.m in Sources */,
 				58B9AD032694F78500AB03D7 /* main.m in Sources */,
 				58B9ACF52694F78400AB03D7 /* SceneDelegate.m in Sources */,
 				586599F5269645E000163C58 /* PhotoMapViewController.m in Sources */,
 				586599F22695197B00163C58 /* FeedViewController.m in Sources */,
+				58659A002698B17800163C58 /* PostDetailsViewController.m in Sources */,
 				586599EF2695084E00163C58 /* LoginViewController.m in Sources */,
 				586599F926965DA500163C58 /* Post.m in Sources */,
 			);

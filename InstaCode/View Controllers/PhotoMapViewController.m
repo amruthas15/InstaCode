@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];
     imagePickerVC.delegate = self;
@@ -28,7 +27,7 @@
     
     
 
-    // The Xcode simulator does not support taking pictures, so let's first check that the camera is indeed supported on the device before trying to present it.
+    // The Xcode simulator does not support taking pictures, so first check that the camera is indeed supported on the device before trying to present it.
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
     }
@@ -46,11 +45,10 @@
     UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
     
-    CGSize
-    //self.postedImage = [self resizeImage:editedImage withSize:10MB]; //figure out size for 10MB
+    CGSize photoSize = CGSizeMake(720, 720);
+    self.postedImage = [self resizeImage:editedImage withSize:photoSize]; //figure out size for 10MB
+    //self.postedImage = editedImage;
     self.imageView.image = self.postedImage;
-
-    // Do something with the images (based on your use case)
     
     // Dismiss UIImagePickerController to go back to your original view controller
     [self dismissViewControllerAnimated:YES completion:nil];

@@ -7,6 +7,8 @@ target 'InstaCode' do
 
   # Pods for InstaCode
   pod 'Parse'
+  pod 'Parse/UI'
+  pod 'DateTools'
 
   target 'InstaCodeTests' do
     inherit! :search_paths
