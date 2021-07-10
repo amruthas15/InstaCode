@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet PFImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *captionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 
 @end
 
@@ -24,6 +25,7 @@
     self.photoImageView.file = self.post[@"image"];
     [self.photoImageView loadInBackground];
     self.captionLabel.text = self.post.caption;
+    self.usernameLabel.text = self.post.author.username;
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     // Configure the input format to parse the date string
